@@ -18,6 +18,7 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
+    - uses: actions/checkout@v3
     - run: bash -x ./scripts/make.sh test0
     - run: ./scripts/make.sh test1
     - run: ./make.sh test2
