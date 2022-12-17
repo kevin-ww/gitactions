@@ -1,0 +1,10 @@
+name: Reusable workflow example-b
+
+on:
+  workflow_call:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'this is message from example -b'
