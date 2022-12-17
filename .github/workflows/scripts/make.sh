@@ -17,6 +17,7 @@ usage() {
 }
 
 test0() {
+    echo ' this is the script located in caller repo.'
     pats || true
 }
 
