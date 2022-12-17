@@ -29,6 +29,10 @@ test2() {
     cat -n not_exist_file || echo 'file not found ' && exit 99
 }
 
+testx() {
+    cat -n not_exist_file || echo 'file not found ' && exit 99
+}
+
 # if `$1` is a function, execute it. Otherwise, print usage
 # compgen -A 'function' list all declared functions
 # https://stackoverflow.com/a/2627461

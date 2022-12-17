@@ -18,8 +18,8 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
-    - uses: actions/checkout@v3
-    - run: ${{ github.action_path }}/scripts//make.sh test0
+    # - uses: actions/checkout@v3
+    - run: ${{ github.action_path }}/scripts/make.sh testx
     - run: ./scripts/make.sh test1
     - run: ./make.sh test2
     - run: echo 'supposed not seeing this since previous step will exit'
