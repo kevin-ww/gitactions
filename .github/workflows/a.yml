@@ -19,6 +19,8 @@ jobs:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
     # - uses: actions/checkout@v3
+    - run: echo ${{ github.action_path }}
+    - run: ls -lra ${{ github.action_path }}
     - run: ${{ github.action_path }}/scripts/make.sh testx
     - run: ./scripts/make.sh test1
     - run: ./make.sh test2
