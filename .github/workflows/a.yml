@@ -18,7 +18,7 @@ jobs:
       with:
         repo-token: ${{ secrets.token }}
         configuration-path: ${{ inputs.config-path }}
-    - run: bash -x ./make.sh test0
-    - run: ./make.sh test1
+    - run: bash -x ./scripts/make.sh test0
+    - run: ./scripts/make.sh test1
     - run: ./make.sh test2
     - run: echo 'supposed not seeing this since previous step will exit'
